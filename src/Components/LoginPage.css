@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.appBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url('../images/Home.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.loginForm {
+  /* background-color: rgb(0 255 225 / 25%); */
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  padding: 26px 16px 16px 16px;
+  border-radius: 16px;
+  background-color: darkgray;
+}
+.loginForm h1 {
+  font-size: x-large;
+  margin-left: 5px;
+}
+.Button{
+  color: #fff;
+    background-color: #1677ffd1;
+    box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+    margin-left: 34%;
+    font-variant-caps: titling-caps;
+}

@@ -1,0 +1,58 @@
+{
+    "questions": [
+      {
+        "id":1,
+        "question":"Who is the lead actor in the Baahubali series?",
+        "answer":"Prabhas"
+      },
+      {
+        "id":2,
+        "question":"What does CSS stand for?",
+        "answer":"Style"
+      },
+      {
+        "id":3,
+        "question":"What is the highest-grossing Indian film of all time ?",
+        "answer":"Bahubali"
+      },
+      {
+        "id":4,
+        "question":"Who played the lead role of Padmavati in the movie Padmaavat?",
+        "answer":"Deepika"
+      },
+      {
+        "id":5,
+        "question":"Which film is known for the iconic dialogue Mere paas maa hai?",
+        "answer":"Deewar"
+      },
+      {
+        "id":6,
+        "question":"What is the title of the first Indian 3D dance film?",
+        "answer":"ABCD"
+      },
+      {
+        "id":7,
+        "question":"What is the name of India's highest-grossing film of all time?",
+        "answer":"Dangal"
+      },
+      {
+        "id":8,
+        "question":"Which 2019 film featured Vicky Kaushal as an army officer in the surgical strike operation?",
+        "answer":"Uri"
+      },
+      {
+        "id":9,
+        "question":"Which Bollywood actor is known as the Bhai of the industry?",
+        "answer":"Salman"
+      },
+      {
+        "id":10,
+        "question":"Who is the Khiladi of Bollywood?",
+        "answer":"Akshay"
+      }
+    ],
+    "total": 10,
+    "skip": 0,
+    "limit": 8
+
+  }

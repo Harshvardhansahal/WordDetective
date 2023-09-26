@@ -1,0 +1,17 @@
+/* CardLayout.css */
+.container {
+  width: 90%;
+  background-color: black;
+}
+
+.container-row {
+  /* width: 90%;
+  background-color: blue; */
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 55px;
+}
+.CardParagraph{
+  font-size: larger;
+  font-weight: 500;
+}

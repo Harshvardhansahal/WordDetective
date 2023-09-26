@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.teachBg {
+  /* width: 100vw;
+  height: 100vh; */
+  background: url('../images/teachBg1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  font-variant-caps: small-caps;
+}
+@media (max-width: 1245px) {
+  /* * {
+    overflow: visible;
+  } */
+
+  .teachBg {
+    overflow-y: visible;
+  }
+}
+@media (max-width: 800px) {
+  * {
+    overflow: visible;
+  }
+
+  .teachBg {
+    overflow-y: visible;
+  }
+  h2{
+    font-size: larger;
+  }
+}
+@media (max-width:660px){
+  h2{
+    font-size: smaller;
+  }
+}

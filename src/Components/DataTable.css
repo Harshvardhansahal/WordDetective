@@ -1,0 +1,12 @@
+.table{
+    width:60%;
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+
+}
+@media (max-width: 1245px) {
+    .table{
+        float: right;
+    }
+  }

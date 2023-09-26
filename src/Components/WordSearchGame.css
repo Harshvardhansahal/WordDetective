@@ -1,0 +1,54 @@
+/* CSS for the word search grid */
+.word-search-grid {
+  /* display: grid; */
+  max-width: 255px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.grid-row {
+  display: flex;
+}
+.grid-cell {
+  width: 30px;
+  /* Adjust cell width as needed */
+  height: 30px;
+  /* Adjust cell height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbb5b5;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+.selected {
+  background-color: #007bff;
+  /* Color for selected cells */
+  color: #fff;
+  /* Text color for selected cells */
+}
+.selected-word {
+  margin: 5px;
+  font-size: larger;
+  font-weight: 500;
+}
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+  /* Adjust grid cell size and font size for smaller screens */
+  .grid-cell {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+}
+/* Media query for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  /* Further adjust grid cell size and font size for very small screens */
+  .grid-cell {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+  }
+}

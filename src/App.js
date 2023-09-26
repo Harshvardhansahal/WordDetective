@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import './Components/Navbar.css';
+import React, { useState } from 'react';
+import LoginPage from './Components/LoginPage';
+import TeacherDashboard from './Components/TeacherDashboard';
+import StudentDashboard from './Components/StudentDashboard';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Navbar from './Components/Navbar';
+import { message } from 'antd'
+
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState(
+    localStorage.getItem('loggedInUser') // Check if the user is logged in from localStorage
+  );
+
+  const handleLogout = () => {
+    localStorage.removeItem('loggedInUser'); // Remove user from localStorage upon logout
+    setLoggedInUser(null);
+    message.success('LogOut successful');
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        {loggedInUser && <Navbar setLoggedInUser={handleLogout} />}
+        {loggedInUser ? (
+          loggedInUser.startsWith('teacher:') ? (
+            <TeacherDashboard />
+          ) : loggedInUser.startsWith('student:') ? (
+            <StudentDashboard />
+          ) : null
+        ) : (
+          <Routes>
+            <Route path="/" element={<LoginPage setLoggedInUser={setLoggedInUser} userType={''} />} />
+          </Routes>
+        )}
+
+      </div>
+    </BrowserRouter>
   );
 }
-
 export default App;

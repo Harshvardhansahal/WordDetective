@@ -1,0 +1,15 @@
+[
+  {
+    "id": "teacher1@id.com",
+    "password": "teacher123",
+    "role": "teacher"
+  
+  },
+  {
+    "id": "sonu@id.com",
+    "password": "teacher123",
+    "role": "teacher"
+  
+  }
+
+]
