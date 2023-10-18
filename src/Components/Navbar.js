@@ -1,21 +1,28 @@
 import React from 'react'
 import './Navbar.css'
 import { UserOutlined } from '@ant-design/icons'
-import { Button } from 'antd'
+import { Button, Dropdown, Menu } from 'antd'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
-function Navbar({ setLoggedInUser }) {
-  // console.log('setLoggedInUser prop in Navbar:', setLoggedInUser);
+
+function Navbar({user, setLoggedInUser }) {
   const [isLoggedOut, setIsLoggedOut] = useState(false);
   const logOut = () => {
     if (!isLoggedOut) {
-      // message.success('LogOut successful');
       setIsLoggedOut(true);
       setLoggedInUser(null);
     }
   };
+
+  const menu = (
+    <Menu >
+      <Menu.Item key="1" >
+        <Link to="/" onClick={logOut}><Button type="primary" htmlType="submit">Logout</Button></Link>
+      </Menu.Item>
+    </Menu>
+  );
 
   return (
     <nav className='Navbar'>
@@ -23,15 +30,14 @@ function Navbar({ setLoggedInUser }) {
         <h1>WordDetective</h1>
       </div>
       <div className="user">
-        <UserOutlined className='user-icon' />
-        <Link to="/">
-          <Button type='primary' htmlType='submit' onClick={logOut}>
-            Logout
-          </Button>
-        </Link>
+      <Dropdown  overlay={menu} placement="bottom">
+          <Link to="#" onClick={(e) => e.preventDefault()}>
+          <span style={{color:"black"}}>{user}</span> {/* Display user's name */}
+            <UserOutlined className='user-icon' />
+          </Link>
+      </Dropdown>
       </div>
     </nav>
   );
 }
-
 export default Navbar

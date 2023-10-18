@@ -3,6 +3,7 @@
   margin-top: 0;
   box-sizing: border-box;
   /* overflow: hidden; */
+  
 }
 .teachBg {
   /* width: 100vw;
@@ -12,6 +13,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
   overflow-x: hidden;
   overflow-y: hidden;
 }

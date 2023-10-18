@@ -1,58 +1,66 @@
 {
     "questions": [
       {
-        "id":1,
+        "id":"Q1",
         "question":"Who is the lead actor in the Baahubali series?",
-        "answer":"Prabhas"
+        "answer":"PRABHAS",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":2,
-        "question":"What does CSS stand for?",
-        "answer":"Style"
+        "id":"Q2",
+        "question":"Which Bollywood actor is involved in a blackbuck hunting case controversy?",
+        "answer":"SALMAN",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":3,
+        "id":"Q3",
         "question":"What is the highest-grossing Indian film of all time ?",
-        "answer":"Bahubali"
+        "answer":"BAHUBALI",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":4,
+        "id":"Q4",
         "question":"Who played the lead role of Padmavati in the movie Padmaavat?",
-        "answer":"Deepika"
+        "answer":"DEEPIKA",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":5,
+        "id":"Q5",
         "question":"Which film is known for the iconic dialogue Mere paas maa hai?",
-        "answer":"Deewar"
+        "answer":"DEEWAR",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":6,
+        "id":"Q6",
         "question":"What is the title of the first Indian 3D dance film?",
-        "answer":"ABCD"
+        "answer":"ABCD",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":7,
+        "id":"Q7",
         "question":"What is the name of India's highest-grossing film of all time?",
-        "answer":"Dangal"
+        "answer":"DANGAL",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":8,
-        "question":"Which 2019 film featured Vicky Kaushal as an army officer in the surgical strike operation?",
-        "answer":"Uri"
+        "id":"Q8",
+        "question":"In 2019, which film starred Vicky Kaushal as an army officer?",
+        "answer":"URI",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":9,
+        "id":"Q9",
         "question":"Which Bollywood actor is known as the Bhai of the industry?",
-        "answer":"Salman"
+        "answer":"SALMAN",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       },
       {
-        "id":10,
-        "question":"Who is the Khiladi of Bollywood?",
-        "answer":"Akshay"
+        "id":"Q10",
+        "question":"Who holds the title Khiladi in the world of Bollywood today?",
+        "answer":"AKSHAY",
+        "answer1":["PRABHAS", "BAHUBALI", "DEEPIKA", "DEEWAR", "ABCD", "DANGAL", "URI", "SALMAN", "AKSHAY"]
       }
-    ],
-    "total": 10,
-    "skip": 0,
-    "limit": 8
+    ]
+    
 
   }

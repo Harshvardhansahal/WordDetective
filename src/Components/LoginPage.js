@@ -4,12 +4,10 @@ import { Form, Input, Button, Typography, message } from 'antd';
 import teachersData from '../teachers.json';
 import studentsData from '../students.json';
 
-function LoginPage({ setLoggedInUser, userType }) {
+function LoginPage({ setLoggedInUser }) {
     const [error, setError] = useState('');
-
     const onFinish = (values) => {
         const { username, password } = values;
-
         // Load the appropriate JSON data based on userType
         const teacher = teachersData.find(
             (teacher) => teacher.id === username && teacher.password === password
@@ -46,7 +44,6 @@ function LoginPage({ setLoggedInUser, userType }) {
                 <Typography.Title style={{ color: 'black', fontVariantCaps: 'small-caps' }}>WordDetective</Typography.Title>
                 <Form.Item
                     name="username"
-                    // label="Username"
                     rules={[
                         {
                             required: true,
@@ -56,10 +53,8 @@ function LoginPage({ setLoggedInUser, userType }) {
                 >
                     <Input placeholder='Username' allowClear />
                 </Form.Item>
-
                 <Form.Item
                     name="password"
-                    // label="Password"
                     rules={[
                         {
                             required: true,
@@ -69,8 +64,6 @@ function LoginPage({ setLoggedInUser, userType }) {
                 >
                     <Input.Password placeholder='Password' allowClear />
                 </Form.Item>
-
-
                 <Form.Item>
                     <Button className='Button' type="primary" htmlType="submit">
                         Log in

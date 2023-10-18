@@ -4,7 +4,7 @@ import { FETCH_DATA_REQUEST, fetchDataSuccess, fetchDataFailure } from './action
 
 function* fetchDataSaga() {
   try {
-    const response = yield call(fetch, 'https://mocki.io/v1/69d14fe3-be0b-4157-ac0e-c1261b36f2a6');
+    const response = yield call(fetch, 'https://mocki.io/v1/754f3274-355b-463b-88b5-a3307de99054');
     const result = yield response.json();
     yield put(fetchDataSuccess(result.questions));
   } catch (error) {
@@ -15,3 +15,4 @@ function* fetchDataSaga() {
 export function* watchFetchData() {
   yield takeLatest(FETCH_DATA_REQUEST, fetchDataSaga);
 }
+

@@ -21,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {loggedInUser && <Navbar setLoggedInUser={handleLogout} />}
+        {loggedInUser && <Navbar user={loggedInUser} setLoggedInUser={handleLogout} />}
         {loggedInUser ? (
           loggedInUser.startsWith('teacher:') ? (
             <TeacherDashboard />
