@@ -19,7 +19,7 @@ function App() {
     message.success('LogOut successful');
   };
   return (
-    <BrowserRouter basename='/WordDetective'>
+    <BrowserRouter>
       <div className="App">
         {loggedInUser && <Navbar user={loggedInUser} setLoggedInUser={handleLogout} />}
         {loggedInUser ? (
@@ -30,7 +30,7 @@ function App() {
           ) : null
         ) : (
           <Routes>
-            <Route path="/WordDetective" element={<LoginPage setLoggedInUser={setLoggedInUser} userType={''} />} />
+            <Route path="/" element={<LoginPage setLoggedInUser={setLoggedInUser} userType={''} />} />
           </Routes>
         )}
 
